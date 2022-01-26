@@ -14,9 +14,6 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
 
-      - name: Echo github obj
-        run: echo ${{ toJson(github) }}
-
       - name: Update Changelog
         uses: stefanzweifel/changelog-updater-action@v1
         with:
